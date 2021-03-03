@@ -31,10 +31,6 @@ function TableData() {
   // prettier-ignore
   const handleClick = () => {
     const indexColumn = inputs.column;
-    // if (lastColumn === indexColumn) {
-    //   setDataApi(dataApi);
-    // } else {
-    //   setLastColumn(indexColumn);
     setDataApi(
       dataApi.filter((element) => {
         switch (inputs.comparison) {
@@ -49,7 +45,6 @@ function TableData() {
         }
       }),
     );
-    // }
     setOptions(options.filter((element) => element !== indexColumn));
   };
 
